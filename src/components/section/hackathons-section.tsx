@@ -52,9 +52,9 @@ export default function HackathonsSection() {
                     {hackathon.description}
                   </p>
                 )}
-                {hackathon.links && hackathon.links.length > 0 && (
+                {'links' in hackathon && (hackathon as any).links.length > 0 && (
                   <div className="mt-1 flex flex-row flex-wrap items-start gap-2">
-                    {hackathon.links.map((link, idx) => (
+                    {(hackathon as any).links.map((link: any, idx: number) => (
                       <Link
                         href={link.href}
                         key={idx}
