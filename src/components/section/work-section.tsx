@@ -31,11 +31,12 @@ function LogoImage({ src, alt }: { src: string; alt: string }) {
 }
 
 export default function WorkSection() {
-  if (!DATA.work || DATA.work.length === 0) return null;
+  const workData = (DATA as any).work;
+  if (!workData || workData.length === 0) return null;
 
   return (
     <Accordion type="single" collapsible className="w-full grid gap-6">
-      {DATA.work.map((work) => (
+      {workData.map((work: any) => (
         <AccordionItem
           key={work.company}
           value={work.company}
