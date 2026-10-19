@@ -172,7 +172,7 @@ export const DATA = {
     },
     {
       school: "Jaspal Kaur Public School",
-      href: "https://dav14gurgaon.com/",
+      href: "https://www.jkps.org/",
       degree: "Secondary (CBSE) - 92.6%",
       logoUrl: "/logo-326x329.png",
       start: "2019",
@@ -180,6 +180,38 @@ export const DATA = {
     },
   ],
   projects: [
+    {
+      title: "SmartSplit Pro",
+      href: "https://smartsplit-pro.vercel.app/",
+      dates: "October 2026",
+      active: true,
+      description:
+        "SmartSplit takes the hassle out of shared finances. AI-powered group expense sharing platform that scans receipts, splits costs flexibly, minimizes debts, and keeps every member in sync in real time. Upload a receipt and Gemini Vision extracts the merchant, tax, and line items, or describe an expense in plain English and Groq and Gemini NLP turn it into a structured entry. Perceptual hashing blocks duplicate receipts, a graph-based algorithm reduces group IOUs to the fewest settlements, and Socket.IO syncs balances, chat, and notifications live across all members.",
+      technologies: [
+        "Next.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "TypeScript",
+        "Gemini AI",
+        "Socket.IO",
+        "groq",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://smartsplit-pro.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Garvgoel23/SmartSplit",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/SmartSplit.png",
+      video: "",
+    },
     {
       title: "Grid AI",
       href: "https://traffic-gridai.vercel.app/",
